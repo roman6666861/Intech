@@ -22,7 +22,7 @@ public class MainController {
 
     @RequestMapping(value="/post", method = RequestMethod.POST,
             consumes = {"application/json"})
-    public @ResponseBody Message postMessage(@RequestBody Message abstractEntity) {
-        return service.save(abstractEntity);
+    public @ResponseBody Message postMessage(@RequestBody Message inputMessage) {
+        return service.save(inputMessage);
     }
 }

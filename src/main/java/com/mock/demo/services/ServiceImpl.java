@@ -10,7 +10,8 @@ import org.springframework.stereotype.Service;
 @Slf4j
 @Service
 public class ServiceImpl implements MainService{
-    private MessageRepository messageRepository;
+
+    private final MessageRepository messageRepository;
 
     @Autowired
     public ServiceImpl(MessageRepository messageRepository) {
